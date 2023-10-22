@@ -52,7 +52,9 @@ public class LinkedList {
             head = null;
             tail = null;
         } else {
+            Node temp = head;
             head = head.getNext();
+            temp.setNext(null);
         }
     }
 
