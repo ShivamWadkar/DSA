@@ -1,0 +1,9 @@
+# IntelliJ IDEA local files
+.idea
+*.iws
+
+# Compilation output
+out/
+target/
+build/
+*.class
