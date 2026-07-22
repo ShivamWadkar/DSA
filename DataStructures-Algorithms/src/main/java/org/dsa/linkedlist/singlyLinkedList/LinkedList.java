@@ -106,6 +106,21 @@ public class LinkedList {
         head = travp;
     }
 
+    public boolean hasCycle() {
+        Node slow = head;
+        Node fast = head;
+        while(fast != null && fast.getNext() != null) {
+            slow = slow.getNext();
+            fast = fast.getNext().getNext();
+
+            if (slow == fast) {
+                return true;
+            }
+        }
+
+        return false;
+    }
+
     private int noOfNodes() {
         int count = 1;
         Node trav = head;

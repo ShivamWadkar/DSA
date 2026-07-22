@@ -21,6 +21,8 @@ public class UserOfLinkedList {
 
         linkedList.insertLast(20);
 
+        System.out.println("Has cycle: " + linkedList.hasCycle());
+
         System.out.println(linkedList);
 
     }
