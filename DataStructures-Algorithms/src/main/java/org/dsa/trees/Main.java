@@ -19,5 +19,17 @@ public class Main {
         System.out.println("Height: "+binaryTree.heightOfTree(root));
         System.out.println("Node count: "+binaryTree.countNodes(root));
         System.out.println("Sum: "+binaryTree.sum(root));
+
+        BinarySearchTree bst = new BinarySearchTree();
+
+        int[] values = {50, 30, 70, 20, 40, 60, 80};
+
+        for (int value : values) {
+            bst.root = bst.insert(bst.root, value);
+        }
+
+        binaryTree.inOrder(bst.root);
+
+        System.out.println(bst.search(bst.root, 70));
     }
 }
